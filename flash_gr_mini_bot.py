@@ -129,8 +129,8 @@ def total_pos_onstep(tmp):
     return res
    else:
      print('Что-то пошло не так')
-   total_sorted = dict(sorted(name_id_step.items(), key=lambda item: item[1]))
-   last_modified = time.ctime(os.path.getmtime('./Текущая ситуация.xlsx'))
+total_sorted = dict(sorted(name_id_step.items(), key=lambda item: item[1]))
+last_modified = time.ctime(os.path.getmtime('./Текущая ситуация.xlsx'))
   #Файл с дедлайнами
 def find_next_dd():
    f = open('ddays.txt', encoding='utf-8')
